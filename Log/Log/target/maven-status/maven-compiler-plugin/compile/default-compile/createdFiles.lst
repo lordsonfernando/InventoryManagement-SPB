@@ -1,0 +1,8 @@
+controller\LogController.class
+repository\MaterialRepo.class
+service\MaterialService.class
+model\Users.class
+repository\UserRepository.class
+com\example\demo\LogApplication.class
+model\MaterialsLog.class
+service\MaterialServiceImpl.class

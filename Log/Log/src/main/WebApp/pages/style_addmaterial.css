@@ -1,0 +1,156 @@
+body
+{
+	background:url(atos.jpg);
+	padding:0px;
+	margin: 0px;
+	background-size: cover;
+	font-family: cursive;
+
+}
+
+::placeholder {
+	color:black;
+	opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:black;
+   font-family: 'myFont', Arial, Helvetica, sans-serif;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+   color:black;
+   font-family: 'myFont', Arial, Helvetica, sans-serif;
+  }
+.container
+{
+	background: transparent;
+	width: 600px;
+	height: 500px;
+	border-radius: 30px;
+	margin: 0 auto;
+	/*border-bottom:1px solid #CCC;*/
+	margin-top:1px;
+}
+
+.ipt
+{
+	width:235px;
+	height: 35px;
+	border-radius: 03px;
+	border:none;
+	border:1px solid #CCC;
+	margin-left: 20px;
+	padding-left: 05px; 
+	border-left: 05px solid #27ae60;
+	margin-top: 10px;
+}
+
+.button {
+    background-color: #c0392b; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 60px
+}
+
+.button {
+    background-color: #4CAF50; 
+    color: white; 
+    border: 2px solid #4CAF50;
+}
+
+.button:hover {
+    background-color:#3498db; 
+    color: white; 
+    border: 2px solid #3498db;
+}
+
+
+.ipt:focus
+{
+	border-left: 05px solid #3498db;
+	
+}
+
+.fold
+{
+	position: relative;
+	width: 100%;
+	background:rgba(17,24,34,0.5);
+	transform-origin: top;
+	padding: 30px 20px;
+	border-radius: 30px;
+
+}
+.paragraph:focus
+{
+	border-left: 05px solid #e74c3c;
+	
+}
+
+/*.paragraph:hover
+{
+	background-color: #3498db; 
+    color: white; 
+    border: 2px solid #3498db;
+
+}*/
+.high:hover
+{
+	color: white;
+}
+.radioContainer
+{
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+	font-family: sans-serif;
+	font-size: 15px;
+	user-select: none;
+	padding-left: 30px;
+}
+.radioContainer input
+{
+	display: none;
+}
+.circle
+{
+	display:inline-block;
+	width: 20px;
+	height: 20px;
+	background-color:#eee; 
+	position: absolute;
+	left: 0;
+	top: 0;
+	border-radius: 50%;
+}
+.radioContainer:hover .circle
+{
+	background-color: #ccc;
+}
+.radioContainer input:checked + .circle
+{
+	background-color: #4CAF50;
+}
+.radioContainer input:checked + .circle:after
+{
+	content: "";
+	height: 8px;
+	width: 8px;
+	background-color: white;
+	position: absolute;
+	border-radius: 50%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+
+}
